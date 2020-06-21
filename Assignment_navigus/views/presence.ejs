@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<h1>Welcome to default page</h1>
+
+
+<div class="dropdown">
+    <button class="btn btn-lg btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-video-camera" aria-hidden="true"></i> All User
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <% page.alluser.forEach(function(user){ %>
+                <li style="text-align: center; width: 100px;"><a href="#" style="text-align: center;"><%= user.username %></a></li>
+        <% }); %>
+    </ul>
+  </div>
+<%- include("partials/footer") %>
